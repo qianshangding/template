@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="2.0">
+  <wb-module deploy-name="test-web">
+    <property name="context-root" value="test-web"/>
+    <wb-resource deploy-path="/" source-path="src/main/webapp"/>
+    <property name="java-output-path" value="/target/classes"/>
+    <dependent-module archiveName="test-ad.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/test-ad/test-ad">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="test-core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/test-core/test-core">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="test-dao.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/test-dao/test-dao">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="test-terminal.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/test-terminal/test-terminal">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="test-user.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/test-user/test-user">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="test-res.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/test-res/test-res">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+  </wb-module>
+</project-modules>
